@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dev</groupId>
-	<artifactId>sample1</artifactId>
+	<artifactId>egov01</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version> <!-- -SNAPSHOT 이 붙으면 무조건 SNAPSHOT배포이고, 없으며 RELEASE에 배포 -->
 	<name>egov01</name>
