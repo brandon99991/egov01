@@ -21,10 +21,6 @@
 		<org.egovframe.rte.version>4.3.0</org.egovframe.rte.version>
 	</properties>
 
-    <!-- 1) 폐쇄망에서 Nexus를 사용할때는 아래 repository는 주석처리 할 것
-         2) 도커에서 Nexus를 사용할때는 아래 repository를 설정할 것.
-            (* 도커 Nexus는 Repository 설정 필요함)
-    -->
 	<repositories>
         <repository>
             <id>mvn2s</id>
