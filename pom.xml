@@ -220,23 +220,19 @@
 	<distributionManagement>
 	    <!-- Release 배포용 -->
 	    <!-- id는 settings.xml의 <server><id>와 같아야 함 -->
-		<!--
 	    <repository>
 	        <id>kis-releases</id>
 	        <name>kis-releases Repository</name>
 	        <url>http://localhost:8081/nexus/content/repositories/kis-releases/</url>
 	    </repository>
-		-->
 			
 	    <!-- Snapshot 배포용 -->
 	    <!-- id는 settings.xml의 <server><id>와 같아야 함 -->
-		<!--	
 	    <snapshotRepository>
 	        <id>kis-snapshots</id>
 	        <name>kis-snapshots Repository</name>
 	        <url>http://localhost:8081/nexus/content/repositories/kis-snapshots/</url>
 	    </snapshotRepository>
-	    -->
 	</distributionManagement>    
     
 </project>
