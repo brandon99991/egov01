@@ -64,7 +64,7 @@
         	<!-- 타이틀 -->
         	<div id="title">
         		<ul>
-        			<li>ccc<img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/><spring:message code="list.sample" /></li>
+        			<li>ddd<img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/><spring:message code="list.sample" /></li>
         		</ul>
         	</div>
         	<!-- // 타이틀 -->
