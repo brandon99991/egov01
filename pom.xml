@@ -229,7 +229,7 @@
 	        <url>http://192.168.35.35:28081/repository/kis-releases/</url>	        
 	    </repository>
 			
-	    <!-- Snapshot 배포용 -->
+	    <!-- Snapshot 배포용. -->
 	    <!-- id는 settings.xml의 <server><id>와 같아야 함 -->
 	    <snapshotRepository>
 	        <id>kis-snapshots</id>
