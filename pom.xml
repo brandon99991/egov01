@@ -223,7 +223,10 @@
 	    <repository>
 	        <id>kis-releases</id>
 	        <name>kis-releases Repository</name>
-	        <url>http://localhost:8081/nexus/content/repositories/kis-releases/</url>
+	        <!-- Local -->	        
+	        <!-- url>http://localhost:8081/nexus/content/repositories/kis-releases/</url  -->
+	        <!-- WSL Docker -->
+	        <url>http://192.168.35.35:28081/repository/kis-releases/</url>	        
 	    </repository>
 			
 	    <!-- Snapshot 배포용 -->
@@ -231,7 +234,10 @@
 	    <snapshotRepository>
 	        <id>kis-snapshots</id>
 	        <name>kis-snapshots Repository</name>
-	        <url>http://localhost:8081/nexus/content/repositories/kis-snapshots/</url>
+	        <!-- Local -->
+	        <!-- url>http://localhost:8081/nexus/content/repositories/kis-snapshots/</url  -->
+	        <!-- WSL Docker -->	        
+   	        <url>http://192.168.35.35:28081/repository/kis-snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>    
     
