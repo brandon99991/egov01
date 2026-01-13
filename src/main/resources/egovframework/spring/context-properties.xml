@@ -2,6 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
+<!-- 
 	<bean name="propertiesService" class="org.egovframe.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
 		<property name="properties">
 	        <map>
@@ -10,5 +11,23 @@
 	        </map>
 		</property>
 	</bean>
+-->
+ 	
+	<!-- global properties 파일 셋팅 -->
+	<bean id="globalProps"
+	      class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+	    <property name="location" value="classpath:egovframework/globals-${spring.profiles.active}.properties"/>
+	</bean>
 	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="ignoreResourceNotFound" value="false"/>
+	    <property name="ignoreUnresolvablePlaceholders" value="false"/>
+	</bean>
+	
+	<bean name="propertiesService"
+	      class="org.egovframe.rte.fdl.property.impl.EgovPropertyServiceImpl"
+	      destroy-method="destroy">
+	    <property name="properties" ref="globalProps"/>
+	</bean>
+
 </beans>	
