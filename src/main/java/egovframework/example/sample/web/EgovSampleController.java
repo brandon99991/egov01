@@ -74,7 +74,9 @@ public class EgovSampleController {
 	 */
 	@GetMapping("/egovSampleList.do")
 	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model) throws Exception {
-
+		/* spring.profiles.active */
+		model.addAttribute("profiles", propertiesService.getString("env.name"));
+		
 		/** EgovPropertyService.sample */
 		searchVO.setPageUnit(propertiesService.getInt("pageUnit"));
 		searchVO.setPageSize(propertiesService.getInt("pageSize"));

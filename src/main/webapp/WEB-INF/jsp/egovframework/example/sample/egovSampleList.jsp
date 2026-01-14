@@ -61,10 +61,16 @@
     <form:form modelAttribute="searchVO" id="listForm" name="listForm" method="get">
         <input type="hidden" name="selectedId" />
         <div id="content_pop">
+        	<!-- spring.profiles.active -->
+        	<div id="title">
+        		<ul>
+        			<li><img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/>${profiles}</li>
+        		</ul>
+        	</div>
         	<!-- 타이틀 -->
         	<div id="title">
         		<ul>
-        			<li>111<img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/><spring:message code="list.sample" /></li>
+        			<li><img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/><spring:message code="list.sample" /></li>
         		</ul>
         	</div>
         	<!-- // 타이틀 -->
