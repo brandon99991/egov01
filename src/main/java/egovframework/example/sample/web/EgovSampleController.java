@@ -23,6 +23,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -74,8 +75,11 @@ public class EgovSampleController {
 	 */
 	@GetMapping("/egovSampleList.do")
 	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model) throws Exception {
+		/*
+		 *		@ControllerAdvice(GlobalModelAdvice) 사용으로 아래는 주석 처리함.  
+		 */
 		/* spring.profiles.active */
-		model.addAttribute("profiles", propertiesService.getString("env.name"));
+		//model.addAttribute("profiles", propertiesService.getString("env.name"));
 		
 		/** EgovPropertyService.sample */
 		searchVO.setPageUnit(propertiesService.getInt("pageUnit"));

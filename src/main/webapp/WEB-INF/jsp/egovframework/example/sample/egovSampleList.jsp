@@ -64,7 +64,7 @@
         	<!-- spring.profiles.active -->
         	<div id="title">
         		<ul>
-        			<li><img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/>${profiles}</li>
+        			<li><img src="<c:url value='/images/egovframework/example/title_dot.gif'/>" alt=""/>${appName}(${profiles})</li>
         		</ul>
         	</div>
         	<!-- 타이틀 -->
